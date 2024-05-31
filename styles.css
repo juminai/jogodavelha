@@ -28,6 +28,10 @@ body {
     padding: 1rem 0;
 }
 
+h1 {
+    font-weight: bold;
+}
+
 .jogo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,6 +46,7 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 3rem;
+    font-weight: 500;
     background-color: var(--black);
     transition: background-color 0.3s;
 
@@ -92,6 +97,7 @@ body {
 .reset {
     border: none;
     background-color: var(--accent);
+    color: var(--white);
     padding: .5rem;
     border-radius: .5rem;
     font-size: 1.1rem;
