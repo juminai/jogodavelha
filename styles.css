@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --font: "DM Sans", sans-serif;
+    --black: #0f0f0f;
+    --white: #f0f0f0;
+    --accent: #c49ec4;
+    --cinza: #b4b4b4;
+    --black2: #191919;
+    --black3: #262626;
+    --linha: 1px solid var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font);
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.jogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
+}
+
+.bloco {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+    background-color: var(--black);
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: var(--black2);
+    }
+
+    &:active {
+        background-color: var(--black3);
+    }
+}
+
+.a {
+    border-bottom: var(--linha);
+}
+
+.a2 {
+    border-left: var(--linha);
+    border-right: var(--linha);
+}
+
+.b {
+    border-bottom: var(--linha);
+}
+
+.b2 {
+    border-left: var(--linha);
+    border-right: var(--linha);
+}
+
+.c2 {
+    border-left: var(--linha);
+    border-right: var(--linha);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogadorvez {
+    font-size: 1.5rem;
+}
+
+.reset {
+    border: none;
+    background-color: var(--accent);
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: var(--black3);
+        color: var(--cinza);
+    }
+}
+
+.placar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
