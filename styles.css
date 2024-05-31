@@ -91,13 +91,14 @@ h1 {
 }
 
 .jogadorvez {
+    font-weight: 500;
     font-size: 1.5rem;
 }
 
 .reset {
     border: none;
     background-color: var(--accent);
-    color: var(--white);
+    color: var(--black);
     padding: .5rem;
     border-radius: .5rem;
     font-size: 1.1rem;
@@ -111,6 +112,7 @@ h1 {
 }
 
 .placar {
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     justify-content: center;
